@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>e2e4</title>
+  </head>
+  <body>
+
+    <header class="header">
+      <h3 class="header__title">Тестовое задание стажер Frontend-разработчик (JS)</h3>
+    </header>
+
+    <main class="main">
+      <form method="post" class="form">
+
+        <fieldset class="form__main-data">
+          <ul class="form__main-list">
+            <li class="form__main-item">
+              <label class="form__text" for="surname">фамилия:</label>
+              <input class="form__input" type="text" name="surname" id="surname" placeholder="Укажите фамилию *" value="" maxlength="40">
+              <div class="error"></div>
+            </li>
+            <li class="form__main-item">
+              <label class="form__text" for="name">имя:</label>
+              <input class="form__input" type="text" name="name" id="name" placeholder="Введите ваше имя *" value="" maxlength="40">
+              <div class="error"></div>
+            </li>
+            <li class="form__main-item">
+              <label class="form__text" for="password">Пароль:</label>
+              <input class="form__input form__input--pass" type="password" name="password" id="password" placeholder="Ваш пароль *" value="">
+              <div class="error"></div>
+            </li>
+            <li class="form__main-item">
+              <label class="form__text" for="confirm-pass">Подтверждение:</label>
+              <input class="form__input form__input--confirm-pass" type="password" name="confirm-pass" id="confirm-pass" placeholder="Повторите пароль *" value="">
+              <div class="error"></div>
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset class="form__date-birth">
+          <legend class="form__birth-title">Дата рождения в формате ДД.ММ.ГГГГ</legend>
+              <ul class="form__birth-list">
+                <li class="form__birth-item">
+                  <label class="form__text" for="day">число:</label>
+                  <input class="form__input form__input--day" type="number" name="day" id="day" placeholder="число *" value="">
+                  <div class="error"></div>
+                </li>
+                <li class="form__birth-item">
+                  <label class="form__text" for="month">месяц:</label>
+                  <input class="form__input form__input--month" type="number" name="month" id="month" placeholder="месяц *" value="">
+                  <div class="error"></div>
+                </li>
+                <li class="form__birth-item">
+                  <label class="form__text" for="year">год:</label>
+                  <input class="form__input form__input--year" type="number" name="year" id="year" placeholder="год *" value="">
+                  <div class="error"></div>
+                </li>
+              </ul>
+        </fieldset>
+
+        <fieldset class="form__adress-data">
+          <legend class="form__adress-title">Электронный адрес</legend>
+              <div class="form__adress-item">
+                <label class="form__text" for="mail">Адрес почты</label>
+                <input class="form__input" type="text" name="mail" id="mail" placeholder="Введите почту *" value="">
+                  <div class="error"></div>
+              </div>
+        </fieldset>
+
+        <div class="form__submit">
+          <button class="form__button form__button--disabled" disabled type="submit">Отправить форму</button>
+          <p class="form__required-fields">* — Обязательные для заполнения поля</p>
+        </div>
+
+      </form>
+
+      <div class="modal">
+        <div class="modal__ok visually-hidden">
+          <p class="modal__ok-title">Ваш запрос отправлен</p>
+          <p class="modal__ok-description">Спасибо за регистрацию, для успешного завершения подтвердите ваш электронный адрес</p>
+          <div class="modal__ok-wrapper">
+            <button class="modal__ok-button" type="button">закрыть окно</button>
+          </div>
+        </div>
+        </div>
+
+    </main>
+
+  </body>
+</html>
